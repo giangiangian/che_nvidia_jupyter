@@ -1,5 +1,5 @@
 FROM giangiangian/che_nvidia_python
-RUN pip3 install jupyter
+RUN pip install jupyter
 
 COPY ["entrypoint.sh","/home/user/entrypoint.sh"]
 RUN sudo chmod a+x /home/user/entrypoint.sh
