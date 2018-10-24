@@ -35,6 +35,6 @@ elif sudo -n true > /dev/null 2>&1; then
     sudo /usr/sbin/sshd -D &
 fi
 
-jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser &
+python3 jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser &
 
 exec "$@"
