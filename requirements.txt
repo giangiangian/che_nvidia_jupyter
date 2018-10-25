@@ -1,0 +1,10 @@
+matplotlib
+sqlalchemy
+scipy
+pandas
+statsmodels
+plotly
+seaborn
+keras
+sklearn
+psycopg2-binary
