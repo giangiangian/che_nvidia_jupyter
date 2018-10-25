@@ -9,7 +9,7 @@ COPY ["jupyter_notebook_config.json","/home/user/.jupyter/jupyter_notebook_confi
 COPY ["jupyter_notebook_config.py","/home/user/.jupyter/jupyter_notebook_config.py"]
 
 # Install other python libraries that are required for our projects (yeah, this is not the right place to add these lines)
-COPY requirements.txt
+COPY requirements.txt ./
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
 ENTRYPOINT ["/home/user/entrypoint.sh"]
